@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- based on https://codepen.io/daruri-rakesh-acharya/pen/BazvQKP  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+  <link rel="stylesheet" href="./css/todo.css">
+  <title>To-Do List</title>
+</head>
+<!-- better: #1: https://codepen.io/daruri-rakesh-acharya/pen/BazvQKP #2 https://codepen.io/zanderbush/pen/bGePjoL  #3 ANGULAR: https://codepen.io/rolyart/pen/exRzaz-->
+
+<body>
+  <!-- <h1>To-Do App<h1> -->
+
+  <!-- <form id="ourForm">
+        <label for="task">Enter a task</label><br>
+        <input class="our-field" id="ourField" type="text" autocomplete="off" placeholder="Enter to-do item">
+        <button>Create new item</button>
+      </form> -->
+
+  <!-- <h3>Need to do:</h3> -->
+  <!-- <ul id="ourList"></ul> -->
+
+  <div id="container">
+    <div id="to-do">
+      <h1 id="header">
+        <span>TO-DO LIST</span>
+        <i class="fas fa-plus" id="toggle"></i>
+      </h1>
+      <div>
+        <input autocomplete="off" type="text" id="new-to-do" class="hide input-item" placeholder="Add New to-do item">
+        <button class="create-item" id="create_item">Add item</button>
+      </div>
+    </div>
+    <div id="todo-list"></div>
+    <div id="empty-state"></div>
+
+  </div>
+
+  <script src="./js/todo.js"></script>
+</body>
+
+</html>
